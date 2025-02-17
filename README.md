@@ -20,7 +20,7 @@ REF : https://en.wikiversity.org/wiki/Database_Examples/Northwind/SQL_Server <br
 
     2. ทำการตรวจสอบใน Folder Procedure ว่ามี P_CREATE_TABLE ที่สร้างไว้ไหม
 
-![Alt text](images/showPcreatetable.png)
+![Alt text](images/showPCreateTable.png)
 
 ## 3. Create procedure insert data
 <h3>Run procedure script insert data </h3>
