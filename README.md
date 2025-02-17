@@ -7,7 +7,7 @@
 ```
 create database Northwind;
 ```
-![Alt text](images\createDB.png)
+![Alt text](images/createDB.png)
 
 ## 2. Create procedure create table
 REF : https://en.wikiversity.org/wiki/Database_Examples/Northwind/SQL_Server <br>
@@ -15,24 +15,24 @@ REF : https://en.wikiversity.org/wiki/Database_Examples/Northwind/SQL_Server <br
 
     1. ทำการ copy query จาก P_CREATE_TABLE.sql แล้วทำการ Run เพื่อสร้าง Procedure
 
-![Alt text](images\Pcreatetable.png)
+![Alt text](images/Pcreatetable.png)
 
 
     2. ทำการตรวจสอบใน Folder Procedure ว่ามี P_CREATE_TABLE ที่สร้างไว้ไหม
 
-![Alt text](images\showPcreatetable.png)
+![Alt text](images/showPcreatetable.png)
 
 ## 3. Create procedure insert data
 <h3>Run procedure script insert data </h3>
 
     1. ทำการ copy query จาก P_INSERT_DATA.sql แล้วทำการ Run เพื่อสร้าง Procedure 
 
-![Alt text](images\PInsertData.png)
+![Alt text](images/PInsertData.png)
 
 
     2. ทำการตรวจสอบใน Folder Procedure ว่ามี P_INSERT_DATA ที่สร้างไว้ไหม
 
-![Alt text](images\showPInsertData.png)
+![Alt text](images/showPInsertData.png)
 
 ## 4. Run procedure create table & insert data
 
@@ -42,11 +42,11 @@ REF : https://en.wikiversity.org/wiki/Database_Examples/Northwind/SQL_Server <br
 EXEC P_CREATE_TABLE Northwind;
 ```
 
-![Alt text](images\ExecPCreateTable.png)
+![Alt text](images/ExecPCreateTable.png)
 
 ตรวจสอบว่า table ถูกสร้างเรียบร้อยหรือยัง
 
-![Alt text](images\ShowExecCreateTable.png)
+![Alt text](images/ShowExecCreateTable.png)
 
 ทำการ Execeute Procedure : P_INSERT_DATA เพื่อทำการ insert ข้อมูลเข้าตาราง
 
@@ -54,14 +54,14 @@ EXEC P_CREATE_TABLE Northwind;
 EXEC P_INSERT_DATA;
 ```
 
-![Alt text](images\ExecInsertData.png)
+![Alt text](images/ExecInsertData.png)
 
 ตรวจสอบว่ามีข้อมูลหรือยังด้วยการ select ข้อมูลขึ้นมาดู
 
 ```
 select top(10) * from Northwind.dbo.Categories;
 ```
-![Alt text](images\ShowExecInsertData.png)
+![Alt text](images/ShowExecInsertData.png)
 
 ## 5. ทำการทำแบบทดสอบข้อที่ 1
 
@@ -105,7 +105,7 @@ order by Spending desc;
 
 ```
 
-![Alt text](images\Exam1_TopSpend.png)
+![Alt text](images/Exam1_TopSpend.png)
 
 
 ## 6. ทำการทำแบบทดสอบข้อที่ 2
@@ -172,7 +172,7 @@ END
 
 ```
 
-![Alt text](images\CreateTest2.png)
+![Alt text](images/CreateTest2.png)
 
 ทำการ Run EXEC เพื่อทดสอบ
 
@@ -180,7 +180,7 @@ END
 EXEC dbo.reportSalesQByCategory 1996
 ```
 
-![Alt text](images\ExecTest2.png)
+![Alt text](images/ExecTest2.png)
 
 ## 7. ทำการทำแบบทดสอบข้อที่ 3
 <h3> โจทย์</h3>
@@ -226,4 +226,4 @@ select OrderY, OrderQ, ProductName, Sales, PrevSales, PercentSalse from (
 where ranks_1 = 1
 ```
 
-![Alt text](images\ExecTest3.png)
+![Alt text](images/ExecTest3.png)
